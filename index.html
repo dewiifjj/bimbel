@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Homepage</title>
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+    <!-- navbar -->
+    <header class="navbar">
+        <div class="logo"><a href="#">pi.project</a></div>
+        <ul class="links">
+            <!-- <li><a href="#hero">Home</a></li> -->
+            <li><a href="#about">Tryout</a></li>
+            <li><a href="#services">Materi & Latihan Soal</a></li>
+            <li><a href="#Contact">Kelas Interaktif</a></li>
+            <li id="logout-item-desktop" style="display:none;">
+                <a href="#" id="logout-desktop">Logout</a>
+            </li>
+        </ul>
+        <!-- guest -->
+        <a href="../pages/auth/signup.html" class="action_btn" id="register-btn">Register</a>
+
+        <div class="toggle_btn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+    </header>
+
+    <!-- dropdown -->
+    <div class="overlay"></div>
+    <div class="dropdown_menu">
+        <ul>
+            <!-- <li><a href="#hero">Home</a></li> -->
+            <li><a href="../menutryout/index.html">Tryout</a></li>
+            <li><a href="#bank">Bank Soal</a></li>
+            <li><a href="#contact">Kelas Interaktif</a></li>
+            <li id="logout-item-mobile" style="display: none">
+                <a href="#" id="logout-mobile">Logout</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- section -->
+     <section id="hero" class="hero">
+    <div class="math-background">
+        <span class="math-item">x²</span>
+        <span class="math-item">π</span>
+        <span class="math-item">√x</span>
+        <span class="math-item">∫x dx</span>
+        <span class="math-item">a²+b²=c²</span>
+        <span class="math-item">f(x)</span>
+        <span class="math-item">Σ</span>
+        <span class="math-item">d/dx</span>
+        <span class="math-item">x+y</span>
+        <span class="math-item">△</span>
+
+        <span class="math-item small">+</span>
+        <span class="math-item small">○</span>
+        <span class="math-item small">•</span>
+        <span class="math-item small">✦</span>
+        <span class="math-item small">+</span>
+        <span class="math-item small">○</span>
+        <span class="math-item small">•</span>
+        <span class="math-item small">✦</span>
+        <span class="math-item small">+</span>
+        <span class="math-item small">○</span>
+        <span class="math-item small">•</span>
+        <span class="math-item small">✦</span>
+        <span class="math-item small">+</span>
+        <span class="math-item small">○</span>
+        <span class="math-item small">•</span>
+        <span class="math-item small">✦</span>
+        <span class="math-item small">+</span>
+        <span class="math-item small">○</span>
+        <span class="math-item small">•</span>
+        <span class="math-item small">✦</span>
+
+        <div class="glow glow1"></div>
+        <div class="glow glow2"></div>
+        <div class="glow glow3"></div>
+        <div class="glow glow4"></div>
+        <div class="glow glow5"></div>
+    </div>
+
+    <div class="hero-content">
+
+        <!-- LEFT: text -->
+        <div class="hero-left">
+            <span class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                Belajar · Latihan · Bertumbuh
+            </span>
+            <h1>
+                Teman Belajar
+                <span class="hero-highlight">Matematika</span>
+                Terbaik Kamu
+            </h1>
+            <p>
+                Persiapkan TKA dengan tryout lengkap, bank soal,
+                dan pembahasan yang mudah dipahami.
+            </p>
+            <div class="hero-btns">
+                <a href="#features" class="action_btn" id="start-btn">Mulai Belajar →</a>
+                <a href="#" class="action_btn action_btn--outline">Lihat Tryout</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-num">10<span>K+</span></span>
+                    <span class="hero-stat-label">Pengguna Aktif</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-num">500<span>+</span></span>
+                    <span class="hero-stat-label">Bank Soal</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-num">98<span>%</span></span>
+                    <span class="hero-stat-label">Kepuasan</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: mockup card -->
+        <div class="hero-right">
+            <div class="hero-float-badge">
+                <div class="hero-float-icon">✓</div>
+                <div>
+                    <div class="hero-float-title">Nilai Kamu Naik!</div>
+                    <div class="hero-float-sub">+24 poin minggu ini</div>
+                </div>
+            </div>
+            <div class="mockup-card">
+                <div class="mockup-header">
+                    <span class="mockup-logo">pi.project</span>
+                    <div class="mockup-dots">
+                        <span class="mockup-dot" style="background:#FF2D55;"></span>
+                        <span class="mockup-dot" style="background:#FFEA00;"></span>
+                        <span class="mockup-dot" style="background:#00C9A7;"></span>
+                    </div>
+                </div>
+                <div class="mockup-body">
+                    <div class="mockup-session">📝 Tryout TKA — Sesi 3</div>
+                    <div class="mockup-question-box">
+                        <p class="mockup-q-text">
+                            Jika f(x) = 3x² + 2x − 1,<br>maka nilai f'(2) adalah...
+                        </p>
+                        <div class="mockup-options">
+                            <div class="mockup-opt mockup-opt--correct">
+                                <span class="mockup-opt-dot">✓</span> 14
+                            </div>
+                            <div class="mockup-opt mockup-opt--wrong">
+                                <span class="mockup-opt-dot">✗</span> 12
+                            </div>
+                            <div class="mockup-opt">
+                                <span class="mockup-opt-dot"></span> 16
+                            </div>
+                            <div class="mockup-opt">
+                                <span class="mockup-opt-dot"></span> 10
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mockup-progress-row">
+                        <span class="mockup-progress-label">Soal 6/10</span>
+                        <div class="mockup-progress-bar">
+                            <div class="mockup-progress-fill"></div>
+                        </div>
+                        <span class="mockup-progress-label">60%</span>
+                    </div>
+                    <div class="mockup-score-row">
+                        <div class="mockup-score-chip mockup-score-chip--accent">
+                            <span class="mockup-score-val">85</span>
+                            <span class="mockup-score-lbl">Skor</span>
+                        </div>
+                        <div class="mockup-score-chip">
+                            <span class="mockup-score-val">4</span>
+                            <span class="mockup-score-lbl">Benar</span>
+                        </div>
+                        <div class="mockup-score-chip">
+                            <span class="mockup-score-val">12m</span>
+                            <span class="mockup-score-lbl">Sisa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="waves">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </div>
+</section>
+     <!-- fitur -->
+     <section id="features" class="main-features">
+        <div class="section-title reveal">
+            <h2>Mau mulai dari mana nih?</h2>
+            <p>Pilih fitur yang ingin kamu gunakan untuk mempersiapkan TKA</p>
+        </div>
+        <a href="#" class="feature-large-card reveal" id="tryout-card">
+            <div class="feature-content">
+                <span class="feature-tag">TRYOUT</span>
+                <h3>Tryout TKA</h3>
+                <p>
+                    Uji kemampuan dengan simulasi TKA lengkap
+                    dengan timer dan penilaian otomatis.
+                </p>
+            </div>
+            <div class="feature-icon-large">
+                🎯
+            </div>
+        </a>
+        <a href="#" class="feature-large-card reveal" id="bank-card">
+            <div class="feature-content">
+                <span class="feature-tag">BANK SOAL</span>
+                <h3>Bank Soal TKA + Pembahasan</h3>
+                <p>
+                    Latihan soal sesuai kisi-kisi PERMENDIKDASMEN
+                    lengkap dengan pembahasan yang mudah dipahami.
+                </p>
+            </div>
+            <div class="feature-icon-large">
+                📚
+            </div>
+        </a>
+        
+     </section>
+     <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>project.pi</h3>
+                <p>
+                    Platform belajar matematika untuk membantu
+                    persiapan ujian dengan lebih terarah.
+                </p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Tiktok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <a href="#hero">Home</a>
+                <a href="#">Tryout TKA</a>
+                <a href="#">Bank Soal TKA</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 pi.project. All rights reserved.
+        </div>
+     </footer>
+ 
+
+</body>
+</html>
