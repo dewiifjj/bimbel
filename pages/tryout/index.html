@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tryout TKA - pi.project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <header class="navbar" role="banner">
+        <div class="logo"><a href="#">project.pi</a></div>
+        <div class="nav-meta">
+            <span class="nav-session">Tryout TKA — Sesi 3</span>
+            <div class="nav-timer">
+                <i class="fa-solid fa-clock"></i>
+                <span id="time">00:00:00</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- main layout -->
+    <main class="quiz-layout">
+
+        <!-- sidebar -->
+        <aside class="sidebar" aria-label="Navigasi soal">
+
+            <!-- progress -->
+            <div class="progress-section">
+                <div class="progress-header">
+                    <span class="progress-title">Progress</span>
+                    <span id="progress-count" class="progress-count">0 / 10</span>
+                </div>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="progress-legend">
+                    <div class="legend-item">
+                        <span class="legend-dot legend-dot--answered"></span>
+                        Dijawab
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot legend-dot--current"></span>
+                        Sedang dikerjakan
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot legend-dot--unanswered"></span>
+                        Belum dijawab
+                    </div>
+                </div>
+            </div>
+
+            <!-- question number navigation -->
+            <div id="nav" class="question-nav"></div>
+
+        </aside>
+
+        <!-- question area -->
+        <div class="quiz-container">
+            <section class="question-card" aria-label="Soal ujian">
+
+                <!-- question type badge + counter -->
+                <div class="question-meta">
+                    <span class="question-badge">Pilihan Ganda</span>
+                    <span class="question-counter" id="question-counter">Soal 1 dari 10</span>
+                </div>
+
+                <!-- question text -->
+                <p id="question-text"></p>
+
+                <!-- question image -->
+                <img id="question-image" class="question-image" src="" alt="">
+
+                <!-- question subtext -->
+                <p id="question-subtext"></p>
+
+                <!-- options -->
+                <div id="options"></div>
+
+            </section>
+            <!-- navigation buttons -->
+                <div class="navigation-buttons">
+                    <button id="prevBtn" class="nav-btn">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Sebelumnya
+                    </button>
+                <button class="skip-btn" id="skipBtn">Lewati soal ini</button>
+                <button id="nextBtn" class="nav-btn">
+                    Selanjutnya
+                <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <button id="finish-btn" class="finish-btn">
+                    <i class="fa-solid fa-flag-checkered"></i>
+                    Selesai
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="questions.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

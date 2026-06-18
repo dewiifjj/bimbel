@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Pembahasan Soal</title>
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="#">project.pi</a></div>
+        <ul class="links">
+            <li><a href="../homepage/index.html">Home</a></li>
+            <li><a href="#tyrout">Tryout</a></li>
+            <li><a href="#services">Materi & Latihan Soal</a></li>
+            <li><a href="#Contact">Kelas Interaktif</a></li>
+        </ul>
+        <button class="toggle_btn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+    </header>
+
+    <!-- dropdown -->
+    <div class="overlay"></div>
+    <div class="dropdown_menu">
+        <ul>
+            <li><a href="../homepage/index.html">Home</a></li>
+            <li><a href="#about">Tryout</a></li>
+            <li><a href="#bank">Bank Soal</a></li>
+            <li><a href="#contact">Kelas Interaktif</a></li>
+            <li><a href="#" class="action_btn">Log out</a></li>
+        </ul>
+        
+    </div>
+    <div class="container">
+
+        <div class="review-header">
+            <h1>Pembahasan Tryout</h1>
+            <p>Pelajari kembali soal-soal yang telah dikerjakan.</p>
+        </div>
+
+        <div id="review-list"></div>
+        <div class="review-footer">
+        <a href="../pilihanTO/index.html" class="action_btn">
+        Kembali ke Menu Tryout
+    </a>
+    </div>
+
+    </div>
+     <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>project.pi</h3>
+                <p>
+                    Platform belajar matematika untuk membantu
+                    persiapan ujian dengan lebih terarah.
+                </p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Tiktok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <a href="#hero">Home</a>
+                <a href="#">Tryout TKA</a>
+                <a href="#">Bank Soal TKA</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 pi.project. All rights reserved.
+        </div>
+     </footer>
+    
+    <script src="questions.js"></script>
+    <script src="review.js"></script>
+</body>
+</html>
