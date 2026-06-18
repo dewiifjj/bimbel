@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --accent-color: #FF2D55;
+    --accent-hover: #d9002e;
+    --accent-yellow: #FFEA00;
+    --accent-purple: #7B2FFF;
+    --accent-mint: #00C9A7;
+    --accent-orange: #FF6B35;
+    --accent-text-color: #FFFFFF;
+
+    --base-color: #FFFFFF;
+    --surface-color: #F8F9FC;
+    --surface-color-2: #F0F2F7;
+
+    --navbar-bg: #1A1A2E;
+
+    --text-color: #1A1A2E;
+    --text-muted: #64748B;
+    --border-color: #E2E8F0;
+
+    --input-color: #F8FAFC;
+
+    --success-color: #00C9A7;
+    --error-color: #FF2D55;
+    --warning-color: #FFEA00;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html {
+    font-family: Poppins, Sagoe UI, sans-serif;
+    font-size: 12px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+body{
+    min-height: 100vh;
+    background: var(--base-color);
+}
+
+.wrapper{
+    width: min(450px, 90%);
+    margin: auto;
+    padding: 50px;
+    border-radius: 30px;
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.05);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+form input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 18px;
+    border: 2px solid var(--border-color);
+    background-color: var(--input-color);
+    transition: 150ms ease;
+}
+
+form input:hover {
+    border-color: var(--text-color);
+}
+
+form input:focus{
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+
+form input::placeholder{
+    color: var(--text-muted);
+    opacity: 1;
+}
+
+form button{
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: .85em 4em;
+    background-color: var(--accent-color);
+    color: var(--base-color);
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+form button:hover{
+    background-color: var(--text-color);
+}
+form button:focus{
+    outline: none;
+    background-color: var(--text-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* responsiveness */
+
+@media(max-width: 1100px){
+    body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background: var(--base-color);
+    }
+
+
+    .wrapper{
+        width: 100%;
+        max-width: none;
+        box-shadow: none;
+        padding: 40px 25px;
+        border-radius: 0;
+    }
+    form{
+    width:100%;
+    margin-bottom: 30px;
+    }
+
+    form input {
+        height: 55px;
+    }
+    
+}
+
+
+form div.incorrect input{
+    border-color: #DC2626;
+}
+
+#error-message {
+    color: #DC2626;
+}

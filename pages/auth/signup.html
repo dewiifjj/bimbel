@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="validation.js" defer></script>
+</head>
+<body>
+        <div class="wrapper">
+            <h1>Buat Akun</h1>
+            <p class="subtitle">
+                Mulai perjalanan belajarmu bersama pi.project
+            </p>
+            <p id="error-message"></p>
+            <form id="form">
+                <div>
+                    <input type="text" name="username" id="username" placeholder="Nama Lengkap">
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Kata Sandi">
+                </div>
+                <div>
+                    <input type="password" name="repeat-password" id="repeat-password" placeholder="Ulangi Kata Sandi">
+                </div>
+                <button id="submit-btn" type="submit">Buat Akun</button>
+            </form>
+            <p>Sudah punya akun? <a href="login.html">Login</a></p>
+        </div>
+
+</body>
+</html>
