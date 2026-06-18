@@ -1,4 +1,4 @@
-import { auth} from "../../js/firebase.js"
+import { auth} from "./js/firebase.js"
 import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-auth.js";
 
 const toggleBtn = document.querySelector('.toggle_btn')
