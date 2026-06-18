@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilihan Paket Tryout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <header class="navbar">
+        <div class="logo"><a href="#">project.pi</a></div>
+        <ul class="links">
+            <li><a href="../homepage/index.html">Home</a></li>
+            <!-- <li><a href="#tyrout">Tryout</a></li> -->
+            <li><a href="#services">Materi & Latihan Soal</a></li>
+            <li><a href="#Contact">Kelas Interaktif</a></li>
+        </ul>
+        <button class="toggle_btn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+    </header>
+
+    <!-- dropdown -->
+    <div class="overlay"></div>
+    <div class="dropdown_menu">
+        <ul>
+            <li><a href="../homepage/index.html">Home</a></li>
+            <!-- <li><a href="#about">Tryout</a></li> -->
+            <li><a href="#bank">Bank Soal</a></li>
+            <li><a href="#contact">Kelas Interaktif</a></li>
+            <li><a href="#" class="action_btn">Log out</a></li>
+        </ul>
+        
+    </div>
+
+    <!-- container -->
+    <div class="container">
+        <p class="subtitle">
+            Pilih paket yang ingin kamu kerjakan.
+        </p>
+        <div id="package-list" class="package-list"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
