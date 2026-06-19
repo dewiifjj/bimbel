@@ -1,9 +1,9 @@
-import {auth} from "./js/firebase.js";
+import {auth} from "../../js/firebase.js";
 import {onAuthStateChanged} from "https://www.gstatic.com/firebasejs/12.14.0/firebase-auth.js";
 
 onAuthStateChanged(auth, (user) => {
     if (!user) {
-        window.location.href = "./pages/auth/login.html";
+        window.location.href = "../auth/login.html";
     }
 });
 
