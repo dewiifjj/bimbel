@@ -27,7 +27,7 @@ onAuthStateChanged(auth, (user) => {
 
         // sudah login
         startBtn.href = "#features";
-        tryoutCard.href = "./menutryout/index.html";
+        tryoutCard.href = "./menu-tryout/index.html";
         banksoalCard.href = "./banksoal/index.html";
 
 
