@@ -1,3 +1,12 @@
+import {auth} from "./js/firebase.js";
+import {onAuthStateChanged} from "https://www.gstatic.com/firebasejs/12.14.0/firebase-auth.js";
+
+onAuthStateChanged(auth, (user) => {
+    if (!user) {
+        window.location.href = "./pages/auth/login.html";
+    }
+});
+
 const packages = [
     {
         id:1,
@@ -108,6 +117,12 @@ function startTest(id) {
     localStorage.removeItem("remainingTime");
 
     const selectedPackage = packages.find(pkg => pkg.id === id);
+    
+    if (!selectedPackage.link) {
+        alert("Tryout ini belum tersedia.");
+        return;
+    }
+    
 
     window.location.href = selectedPackage.link;
 }
